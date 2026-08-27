@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OfficeBot — умный офис в Telegram</title>
+  <meta name="description" content="OfficeBot помогает хранить файлы, заметки, документы и работать с AI прямо в Telegram." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="header">
+    <a class="brand" href="#top">
+      <div class="brand-mark">M</div>
+      <span>OfficeBot</span>
+    </a>
+
+    <nav>
+      <a href="#features">Возможности</a>
+      <a href="#how">Как работает</a>
+      <a href="#privacy">Приватность</a>
+    </nav>
+
+    <a class="btn btn-small" id="headerCta" href="#">Открыть в Telegram</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Умный помощник внутри Telegram</div>
+        <h1>Порядок в файлах.<br><span>AI всегда под рукой.</span></h1>
+        <p class="lead">
+          Создавайте папки, сохраняйте заметки, фото, видео и документы,
+          используйте AI для текста, PDF, изображений и голосовых сообщений —
+          всё в одном боте.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" id="mainCta" href="#">🚀 Начать работу</a>
+          <a class="btn btn-ghost" href="#features">Посмотреть возможности</a>
+        </div>
+
+        <div class="trust-row">
+          <div><strong>📁</strong><span>Папки и файлы</span></div>
+          <div><strong>🤖</strong><span>AI-помощник</span></div>
+          <div><strong>🔎</strong><span>Умный поиск</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="orb">
+          <div class="orb-ring"></div>
+          <div class="orb-logo">M</div>
+        </div>
+        <div class="mini-card">
+          <span class="dot"></span>
+          <div>
+            <strong>OfficeBot активен</strong>
+            <p>Готов принять файл, текст или голосовое</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-head">
+        <div class="eyebrow">Что умеет OfficeBot</div>
+        <h2>Один бот вместо десятка инструментов</h2>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="icon">📁</div>
+          <h3>Папки и материалы</h3>
+          <p>Храните тексты, PDF, документы, фотографии и видео в удобной структуре.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">🧠</div>
+          <h3>AI-сортировка</h3>
+          <p>Бот предлагает подходящую папку перед сохранением материала.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">✨</div>
+          <h3>Работа с текстом</h3>
+          <p>Исправление, улучшение, сокращение, расширение, структура и идеи.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">📄</div>
+          <h3>Анализ PDF</h3>
+          <p>Краткое содержание, важные условия, суммы, даты и ответы по документу.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">🖼</div>
+          <h3>Анализ изображений</h3>
+          <p>Описание фотографий, чтение видимого текста и создание подписей.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">🎙</div>
+          <h3>Голосовой помощник</h3>
+          <p>Расшифровывает голосовые сообщения и превращает их в рабочие заметки.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">👥</div>
+          <h3>Общие папки</h3>
+          <p>Делитесь папками с правами просмотра или редактирования.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">🗑</div>
+          <h3>Корзина</h3>
+          <p>Восстанавливайте удалённые папки и материалы или удаляйте их навсегда.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="how">
+      <div>
+        <div class="eyebrow">Как это работает</div>
+        <h2>Просто отправьте материал</h2>
+        <p class="muted">
+          OfficeBot не заставляет разбираться в сложных меню. Отправьте текст,
+          документ, фото, видео или голосовое — бот предложит подходящие действия.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step"><span>01</span><div><strong>Отправьте материал</strong><p>Прямо в чат с ботом.</p></div></div>
+        <div class="step"><span>02</span><div><strong>Выберите папку</strong><p>AI предложит лучший вариант.</p></div></div>
+        <div class="step"><span>03</span><div><strong>Используйте AI</strong><p>Обработайте текст, PDF или изображение.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section privacy" id="privacy">
+      <div class="privacy-card">
+        <div>
+          <div class="eyebrow">Приватность</div>
+          <h2>Ваши материалы остаются организованными и под контролем</h2>
+          <p class="muted">
+            Доступ к общим папкам выдаётся отдельно, а удалённые материалы сначала
+            попадают в корзину. Для публичного запуска сайта добавьте полноценную
+            политику конфиденциальности и условия использования.
+          </p>
+        </div>
+        <div class="shield">🔐</div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-card">
+        <div>
+          <div class="eyebrow">Готовы попробовать?</div>
+          <h2>Откройте OfficeBot в Telegram</h2>
+          <p>Файлы, заметки, документы и AI — в одном месте.</p>
+        </div>
+        <a class="btn" id="bottomCta" href="#">🚀 Начать работу</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand">
+      <div class="brand-mark">M</div>
+      <span>OfficeBot</span>
+    </div>
+    <p>© 2026 OfficeBot</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+// Вставьте username вашего бота вместо YOUR_BOT_USERNAME.
+const BOT_USERNAME = "OfficeMestniyBot";
+const botUrl = `https://t.me/${BOT_USERNAME}`;
+
+["mainCta", "headerCta", "bottomCta"].forEach((id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.href = botUrl;
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
+  }
+});
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#08080d;color:#f7f7fb;font-family:Inter,system-ui,sans-serif;overflow-x:hidden}.noise{position:fixed;inset:0;pointer-events:none;opacity:.08;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.45),transparent 80%)}a{color:inherit;text-decoration:none}.header{height:76px;display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:auto;padding:0 24px;position:relative;z-index:5}.brand{display:flex;gap:10px;align-items:center;font-weight:800}.brand-mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#8b5cf6,#d946ef);box-shadow:0 0 30px rgba(139,92,246,.35)}nav{display:flex;gap:28px;color:#b6b4c3;font-size:14px}nav a:hover{color:#fff}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border-radius:15px;background:linear-gradient(135deg,#7c3aed,#c026d3);font-weight:700;box-shadow:0 12px 40px rgba(124,58,237,.28);transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn-small{min-height:42px;padding:0 16px;font-size:14px}.btn-ghost{background:#15151f;border:1px solid #2b2a38;box-shadow:none}.hero{max-width:1200px;margin:0 auto;padding:100px 24px 90px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:70px;min-height:720px}.eyebrow{color:#b794f6;text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:800;margin-bottom:16px}.hero h1{font-size:64px;line-height:1.02;margin:0 0 26px;letter-spacing:-.05em}.hero h1 span{background:linear-gradient(90deg,#a78bfa,#f0abfc);-webkit-background-clip:text;color:transparent}.lead{font-size:19px;line-height:1.65;color:#b9b7c6;max-width:660px}.hero-actions{display:flex;gap:12px;margin-top:34px}.trust-row{display:flex;gap:28px;margin-top:40px;color:#aaa8b7;font-size:13px}.trust-row div{display:flex;align-items:center;gap:8px}.hero-card{height:520px;border-radius:34px;background:radial-gradient(circle at 50% 40%,rgba(124,58,237,.28),transparent 42%),linear-gradient(145deg,#11111a,#09090f);border:1px solid #262536;position:relative;display:grid;place-items:center;box-shadow:0 40px 100px rgba(0,0,0,.45)}.orb{width:280px;height:280px;border-radius:50%;position:relative;display:grid;place-items:center;box-shadow:0 0 80px rgba(124,58,237,.4)}.orb-ring{position:absolute;inset:0;border-radius:50%;border:8px solid rgba(139,92,246,.9);box-shadow:inset 0 0 35px rgba(139,92,246,.7),0 0 45px rgba(139,92,246,.5)}.orb-logo{font-size:130px;font-weight:900;letter-spacing:-.1em;text-shadow:0 0 28px rgba(216,180,254,.5)}.mini-card{position:absolute;left:34px;right:34px;bottom:30px;border:1px solid #333145;background:rgba(14,14,22,.85);backdrop-filter:blur(12px);border-radius:18px;padding:16px;display:flex;gap:12px;align-items:center}.mini-card p{margin:4px 0 0;color:#8f8c9d;font-size:12px}.dot{width:10px;height:10px;background:#34d399;border-radius:50%;box-shadow:0 0 15px #34d399}.section{max-width:1200px;margin:auto;padding:90px 24px}.section-head{max-width:700px;margin-bottom:42px}.section h2{font-size:42px;letter-spacing:-.04em;margin:0 0 18px}.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.feature-card{padding:26px;border-radius:22px;background:#101018;border:1px solid #242333;min-height:215px;transition:.2s}.feature-card:hover{transform:translateY(-5px);border-color:#5b3b8d}.feature-card .icon{font-size:30px;margin-bottom:22px}.feature-card h3{font-size:18px;margin:0 0 10px}.feature-card p{color:#9693a3;line-height:1.55;font-size:14px;margin:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}.muted{color:#9e9bab;line-height:1.7}.steps{display:grid;gap:14px}.step{display:flex;gap:18px;padding:20px;border-radius:18px;background:#101018;border:1px solid #242333}.step span{color:#a78bfa;font-weight:800}.step strong{font-size:15px}.step p{margin:6px 0 0;color:#898695;font-size:13px}.privacy-card,.cta-card{border-radius:28px;padding:42px;background:linear-gradient(145deg,#12121c,#0d0d14);border:1px solid #2a2938;display:flex;justify-content:space-between;align-items:center;gap:30px}.shield{font-size:72px;filter:drop-shadow(0 0 28px rgba(139,92,246,.4))}.cta-section{max-width:1200px;margin:auto;padding:20px 24px 100px}.cta-card{background:radial-gradient(circle at 80% 50%,rgba(139,92,246,.22),transparent 35%),#11111a}.cta-card h2{margin:0 0 10px;font-size:36px}.cta-card p{margin:0;color:#aaa7b6}footer{max-width:1200px;margin:auto;padding:30px 24px 50px;border-top:1px solid #1f1e2b;display:flex;justify-content:space-between;align-items:center;color:#7e7b89;font-size:13px}.footer-brand{color:#fff}@media(max-width:960px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:60px}.hero h1{font-size:48px}.hero-card{height:420px}.features-grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr;gap:30px}}@media(max-width:600px){.header{height:68px}.header .btn-small{display:none}.hero{padding:50px 18px 65px;gap:35px;min-height:auto}.hero h1{font-size:41px}.lead{font-size:16px}.hero-actions{flex-direction:column}.trust-row{flex-direction:column;gap:12px}.hero-card{height:350px}.orb{width:210px;height:210px}.orb-logo{font-size:96px}.features-grid{grid-template-columns:1fr}.section{padding:65px 18px}.section h2{font-size:34px}.privacy-card,.cta-card{padding:28px;align-items:flex-start;flex-direction:column}.shield{font-size:52px}footer{padding:26px 18px 36px}.cta-section{padding:10px 18px 70px}}
