@@ -8,48 +8,103 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
+  <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="#top"><span class="logo-mark">M</span>MestniyBot</a>
-      <nav>
+      <a class="brand" href="#top">
+        <span class="brand-mark">M</span>
+        <span class="brand-text">MestniyBot</span>
+      </a>
+
+      <nav class="nav-links">
         <a href="#features">Возможности</a>
         <a href="#how">Как работает</a>
         <a href="#privacy">Безопасность</a>
       </nav>
-      <a class="btn small bot-link" href="#">Открыть бота</a>
+
+      <a class="btn btn-small btn-outline bot-link" href="#" target="_blank" rel="noopener">Открыть бота</a>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <div class="eyebrow">AI-ПОМОЩНИК В TELEGRAM</div>
           <h1>Твой умный офис<br><span>в одном боте</span></h1>
-          <p class="lead">Сохраняй заметки и файлы, разбирай голосовые сообщения, анализируй PDF и фото, находи нужное за секунды и работай с материалами вместе с другими.</p>
-          <div class="actions">
-            <a class="btn primary bot-link" href="#">Запустить в Telegram</a>
-            <a class="btn ghost" href="#features">Посмотреть возможности</a>
+          <p class="hero-text">
+            Сохраняй заметки и файлы, разбирай голосовые сообщения, анализируй PDF и фото,
+            находи нужное за секунды и работай с материалами вместе с другими.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary bot-link" href="#" target="_blank" rel="noopener">Запустить в Telegram</a>
+            <a class="btn btn-ghost" href="#features">Посмотреть возможности</a>
+          </div>
+
+          <div class="hero-meta">
+            <span>Без отдельного приложения</span>
+            <span>Работает прямо в Telegram</span>
           </div>
         </div>
 
-        <div class="phone">
-          <div class="phone-screen">
-            <div class="message bot"><b>MestniyBot</b><br>Что сделаем сегодня?</div>
-            <div class="quick"><span>📁 Папки</span><span>🤖 AI</span><span>🔎 Поиск</span></div>
-            <div class="message user">Сохрани голосовое и улучши текст</div>
-            <div class="message bot">🎙 Голос распознан.<br>Могу сохранить, улучшить или структурировать.</div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone-glow"></div>
+          <div class="phone">
+            <div class="phone-top">
+              <div class="speaker"></div>
+            </div>
+
+            <div class="phone-screen">
+              <div class="chat-head">
+                <div class="bot-avatar">M</div>
+                <div>
+                  <strong>MestniyBot</strong>
+                  <small>AI-помощник</small>
+                </div>
+              </div>
+
+              <div class="bubble bot-bubble">
+                Привет! Что сделаем сегодня?
+              </div>
+
+              <div class="quick-grid">
+                <div>📁 Папки</div>
+                <div>🤖 AI</div>
+                <div>🔎 Поиск</div>
+              </div>
+
+              <div class="bubble user-bubble">
+                Сохрани голосовое и улучши текст
+              </div>
+
+              <div class="bubble bot-bubble">
+                🎙 Голос распознан.<br>
+                Могу сохранить, улучшить или структурировать.
+              </div>
+
+              <div class="result-card">
+                <div class="result-icon">✨</div>
+                <div>
+                  <strong>Готово</strong>
+                  <small>Текст обработан AI</small>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="floating-chip chip-one">📄 PDF</div>
+          <div class="floating-chip chip-two">🎙 Голос</div>
+          <div class="floating-chip chip-three">🤖 AI</div>
         </div>
       </div>
     </section>
 
-    <section class="strip">
-      <div class="container strip-grid">
-        <div><b>📁 Папки</b><span>для материалов</span></div>
-        <div><b>🤖 AI</b><span>для текста и анализа</span></div>
-        <div><b>🎙 Голос</b><span>в текст за секунды</span></div>
-        <div><b>👥 Общий доступ</b><span>для совместной работы</span></div>
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div><strong>📁 Папки</strong><span>для материалов</span></div>
+        <div><strong>🤖 AI</strong><span>для текста и анализа</span></div>
+        <div><strong>🎙 Голос</strong><span>в текст за секунды</span></div>
+        <div><strong>👥 Доступ</strong><span>для совместной работы</span></div>
       </div>
     </section>
 
@@ -58,60 +113,126 @@
         <div class="section-head">
           <div class="eyebrow">ВОЗМОЖНОСТИ</div>
           <h2>Всё нужное для работы с информацией</h2>
+          <p>Один бот вместо нескольких сервисов для заметок, файлов, расшифровки и AI.</p>
         </div>
-        <div class="cards">
-          <article><div class="icon">🤖</div><h3>AI-помощник</h3><p>Исправляет, улучшает, сокращает, расширяет и структурирует текст, предлагает идеи и отвечает на вопросы.</p></article>
-          <article><div class="icon">📁</div><h3>Умные папки</h3><p>Храни материалы по папкам, а AI подскажет, куда лучше отправить новую заметку или файл.</p></article>
-          <article><div class="icon">📎</div><h3>Файлы и медиа</h3><p>Сохраняй документы, фотографии, видео и текстовые заметки прямо через Telegram.</p></article>
-          <article><div class="icon">🎙</div><h3>Голосовые</h3><p>Бот превращает голос в текст и предлагает сохранить, улучшить или структурировать результат.</p></article>
-          <article><div class="icon">📄</div><h3>PDF и фото</h3><p>Загружай документы и изображения и задавай AI вопросы по их содержимому.</p></article>
-          <article><div class="icon">👥</div><h3>Общие папки</h3><p>Делись папками с другими пользователями и выдавай права на просмотр или редактирование.</p></article>
-          <article class="wide"><div class="icon">🔎</div><div><h3>Быстрый поиск</h3><p>Находи нужную заметку или материал среди сохранённых данных без ручного просмотра папок.</p></div></article>
-          <article class="wide"><div class="icon">🗑</div><div><h3>Корзина</h3><p>Удалённые материалы можно восстановить, а важные действия подтверждаются перед окончательным удалением.</p></div></article>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="icon">🤖</div>
+            <h3>AI-помощник</h3>
+            <p>Исправляет, улучшает, сокращает, расширяет и структурирует текст, предлагает идеи и отвечает на вопросы.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">📁</div>
+            <h3>Умные папки</h3>
+            <p>Храни материалы по папкам, а AI подскажет, куда лучше отправить новую заметку или файл.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">📎</div>
+            <h3>Файлы и медиа</h3>
+            <p>Сохраняй документы, фотографии, видео и текстовые заметки прямо через Telegram.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">🎙</div>
+            <h3>Голосовые</h3>
+            <p>Бот превращает голос в текст и предлагает сохранить, улучшить или структурировать результат.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">📄</div>
+            <h3>PDF и фото</h3>
+            <p>Загружай документы и изображения и задавай AI вопросы по их содержимому.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">👥</div>
+            <h3>Общие папки</h3>
+            <p>Делись папками с другими пользователями и выдавай права на просмотр или редактирование.</p>
+          </article>
+
+          <article class="feature-card feature-wide">
+            <div class="icon">🔎</div>
+            <div>
+              <h3>Быстрый поиск</h3>
+              <p>Находи нужную заметку или материал среди сохранённых данных без ручного просмотра папок.</p>
+            </div>
+          </article>
+
+          <article class="feature-card feature-wide">
+            <div class="icon">🗑</div>
+            <div>
+              <h3>Корзина</h3>
+              <p>Удалённые материалы можно восстановить, а важные действия подтверждаются перед окончательным удалением.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="how">
+    <section class="section section-alt" id="how">
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">КАК ЭТО РАБОТАЕТ</div>
           <h2>Три шага — и всё под рукой</h2>
         </div>
+
         <div class="steps">
-          <div><span>01</span><h3>Открой бота</h3><p>Запусти MestniyBot в Telegram. Ничего дополнительно устанавливать не нужно.</p></div>
-          <div><span>02</span><h3>Отправь материал</h3><p>Текст, голосовое, фото, видео или документ — бот предложит, что можно сделать дальше.</p></div>
-          <div><span>03</span><h3>Используй AI</h3><p>Сохраняй, анализируй, улучшай и находи информацию прямо в одном чате.</p></div>
+          <div class="step">
+            <span>01</span>
+            <h3>Открой бота</h3>
+            <p>Запусти MestniyBot в Telegram. Ничего дополнительно устанавливать не нужно.</p>
+          </div>
+          <div class="step">
+            <span>02</span>
+            <h3>Отправь материал</h3>
+            <p>Текст, голосовое, фото, видео или документ — бот предложит, что можно сделать дальше.</p>
+          </div>
+          <div class="step">
+            <span>03</span>
+            <h3>Используй AI</h3>
+            <p>Сохраняй, анализируй, улучшай и находи информацию прямо в одном чате.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="privacy">
-      <div class="container privacy">
+      <div class="container privacy-box">
         <div>
           <div class="eyebrow">КОНТРОЛЬ ДАННЫХ</div>
           <h2>Ты решаешь, что сохранять</h2>
           <p>AI может предложить папку или действие, но сохранение происходит только после твоего выбора. Для удаления важных данных используется подтверждение.</p>
         </div>
-        <div class="checks">
-          <span>✓ Выбор папки перед сохранением</span>
-          <span>✓ Корзина и восстановление</span>
-          <span>✓ Права viewer / editor</span>
-          <span>✓ Подтверждение удаления</span>
+
+        <div class="privacy-list">
+          <div>✓ Выбор папки перед сохранением</div>
+          <div>✓ Корзина и восстановление</div>
+          <div>✓ Права viewer / editor</div>
+          <div>✓ Подтверждение удаления</div>
         </div>
       </div>
     </section>
 
-    <section class="cta">
+    <section class="cta-section">
       <div class="container cta-box">
-        <div><div class="eyebrow">ПОПРОБУЙ СЕЙЧАС</div><h2>Перенеси свой умный офис в Telegram</h2><p>Заметки, файлы, голос, поиск и AI — в одном месте.</p></div>
-        <a class="btn primary bot-link" href="#">Открыть MestniyBot</a>
+        <div>
+          <div class="eyebrow">ПОПРОБУЙ СЕЙЧАС</div>
+          <h2>Перенеси свой умный офис в Telegram</h2>
+          <p>Заметки, файлы, голос, поиск и AI — в одном месте.</p>
+        </div>
+        <a class="btn btn-primary bot-link" href="#" target="_blank" rel="noopener">Открыть MestniyBot</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container footer"><span>MestniyBot</span><span>© <span id="year"></span></span></div>
+    <div class="container footer-inner">
+      <span>MestniyBot</span>
+      <span>© <span id="year"></span></span>
+    </div>
   </footer>
 
   <script src="script.js"></script>
