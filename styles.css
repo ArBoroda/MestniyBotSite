@@ -452,3 +452,14 @@ footer{
   .privacy-box,.cta-box{padding:26px;border-radius:23px}
   .footer-inner{flex-direction:column}
 }
+
+
+/* v2.2 — branded logo */
+.brand-logo{width:42px;height:42px;object-fit:cover;border-radius:50%;box-shadow:0 0 20px rgba(168,85,247,.50)}
+.hero-brand-logo{position:absolute;z-index:1;width:285px;height:285px;object-fit:cover;border-radius:50%;left:-70px;top:50%;transform:translateY(-50%);filter:drop-shadow(0 0 32px rgba(168,85,247,.52));opacity:.92}
+.phone{z-index:2}
+.bot-avatar-img{width:34px;height:34px;border-radius:50%;object-fit:cover;box-shadow:0 0 12px rgba(168,85,247,.4)}
+.footer-brand{display:flex;align-items:center;gap:9px;color:#fff;font-weight:700}
+.footer-logo{width:30px;height:30px;border-radius:50%;object-fit:cover}
+@media(max-width:980px){.hero-brand-logo{width:230px;height:230px;left:50%;top:70px;transform:translateX(-50%);opacity:.95}.phone{margin-top:120px}}
+@media(max-width:700px){.hero-brand-logo{width:190px;height:190px;top:75px}.phone{margin-top:105px}}
